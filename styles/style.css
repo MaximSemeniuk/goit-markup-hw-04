@@ -12,6 +12,7 @@
   --secondary-border-color: #eeeeee;
   --main-icon-color: #afb1b8;
   --main-bg-icon-color: rgba(255, 255, 255, 0.1);
+  --hero-linear-gradient: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -137,38 +138,34 @@ img {
   margin-left: 50px;
 }
 
-.icon-mail {
+.contact-link > .item:nth-child(1) {
+  position: relative;
+  bottom: -3px;
 }
 
-/* .item-mail::before {
-  content: '';
-
+.icon-mail {
   display: inline-block;
 
   width: 16px;
   height: 12px;
-  margin-right: 10px;
 
-  background-image: url(../images/icon.svg/envelope.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  fill: var(--primari-text-color);
+
+  position: relative;
+  bottom: -1px;
 }
 
-.item-phone::before {
-  content: '';
-
+.icon-smartphone {
   display: inline-block;
 
   width: 10px;
   height: 16px;
-  margin-right: 10px;
 
-  background-image: url(../images/icon.svg/smartphone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
+  fill: var(--primari-text-color);
+
+  position: relative;
+  bottom: -2px;
+}
 
 /* main */
 
@@ -318,7 +315,11 @@ img {
 /* hero title*/
 
 .section.hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      var(--hero-linear-gradient),
+      var(--hero-linear-gradient)
+    ),
     url(../images/background-image-hero.jpg);
 
   background-position: center;
@@ -326,10 +327,12 @@ img {
   background-size: cover;
 
   max-width: 1600px;
+
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 200px;
   padding-top: 200px;
+
   text-align: center;
   background-color: var(--first-bcg-color);
 }
