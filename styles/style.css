@@ -13,6 +13,7 @@
   --main-icon-color: #afb1b8;
   --main-bg-icon-color: rgba(255, 255, 255, 0.1);
   --hero-linear-gradient: rgba(47, 48, 58, 0.4);
+  --icon-color: currentColor;
 }
 
 body {
@@ -121,11 +122,17 @@ img {
 .header-link > .item:nth-child(n + 2) {
   margin-left: 50px;
 }
+
+.item-icon:hover {
+  color: var(--link-color);
+}
+
 .contact-link {
   display: flex;
 
   margin-left: auto;
 }
+
 .contact-link .link {
   font-weight: 500;
   font-size: 14px;
@@ -138,33 +145,18 @@ img {
   margin-left: 50px;
 }
 
-.contact-link > .item:nth-child(1) {
-  position: relative;
-  bottom: -3px;
-}
-
 .icon-mail {
-  display: inline-block;
+  vertical-align: -1px;
 
   width: 16px;
   height: 12px;
-
-  fill: var(--primari-text-color);
-
-  position: relative;
-  bottom: -1px;
 }
 
 .icon-smartphone {
-  display: inline-block;
+  vertical-align: bottom;
 
   width: 10px;
   height: 16px;
-
-  fill: var(--primari-text-color);
-
-  position: relative;
-  bottom: -2px;
 }
 
 /* main */
