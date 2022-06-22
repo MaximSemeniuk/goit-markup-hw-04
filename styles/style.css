@@ -114,7 +114,7 @@ img {
   align-items: center;
 }
 
-.header-link {
+.header-list {
   align-items: center;
   display: flex;
 
@@ -126,7 +126,7 @@ img {
   color: var(--link-color);
 }
 
-.header-link .link {
+.header-list .link {
   display: block;
   text-decoration: none;
   font-weight: 500;
@@ -136,11 +136,11 @@ img {
   color: var(--title-text-color);
 }
 
-.header-link .link.current {
+.header-list .link.current {
   color: var(--link-color);
 }
 
-.header-link > .item:nth-child(n + 2) {
+.header-list > .item:nth-child(n + 2) {
   margin-left: 50px;
 }
 
@@ -149,13 +149,13 @@ img {
   color: var(--link-color);
 }
 
-.contact-link {
+.contact-list {
   display: flex;
 
   margin-left: auto;
 }
 
-.contact-link .link {
+.contact-list .link {
   cursor: pointer;
 
   font-weight: 500;
@@ -166,7 +166,7 @@ img {
   color: var(--primari-text-color);
 }
 
-.contact-link > .item:nth-child(n + 2) {
+.contact-list > .item:nth-child(n + 2) {
   margin-left: 50px;
 }
 
@@ -176,6 +176,8 @@ img {
   width: 16px;
   height: 12px;
 
+  margin-right: 10px;
+
   fill: currentColor;
 }
 
@@ -184,6 +186,9 @@ img {
 
   width: 10px;
   height: 16px;
+
+  margin-right: 10px;
+
   fill: currentColor;
 }
 
@@ -209,18 +214,18 @@ img {
 
 /* portfolio buttons */
 
-.buttons {
+.list-button {
   display: flex;
   justify-content: center;
 
   margin-bottom: 50px;
 }
 
-.buttons > .item:nth-child(n + 2) {
+.list-button > .item:nth-child(n + 2) {
   margin-left: 8px;
 }
 
-.buttons .button {
+.list-button .button {
   cursor: pointer;
 
   border-radius: 4px;
@@ -239,8 +244,8 @@ img {
   color: var(--title-text-color);
 }
 
-.buttons .button:hover,
-.buttons .button:focus {
+.list-button .button:hover,
+.list-button .button:focus {
   background-color: var(--link-color);
   color: var(--secondary-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -332,7 +337,7 @@ img {
 
 /* hero title*/
 
-.section.hero {
+.hero-section {
   background-image: linear-gradient(
       to right,
       var(--hero-linear-gradient),
@@ -356,7 +361,7 @@ img {
   background-color: var(--first-bcg-color);
 }
 
-.hero .hero-title {
+.hero-title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -369,7 +374,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.hero .hero-button {
+.hero-button {
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -431,7 +436,7 @@ img {
   margin-right: 30px;
 }
 
-.skill-list .skill-title {
+.skill-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -441,7 +446,7 @@ img {
   color: var(--title-text-color);
 }
 
-.skill-list .skill-text {
+.skill-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -455,7 +460,7 @@ img {
   --amount: 2;
 }
 
-.section.work {
+.work-section {
   padding-top: 0;
 }
 
@@ -472,12 +477,12 @@ img {
 
 /* our team */
 
-.section.team {
+.team-section {
   background-color: var(--second-bcg-color);
 }
 
 .team-list {
-  --item: 4;
+  --items: 4;
   --amount: 3;
 }
 
@@ -493,7 +498,7 @@ img {
   padding-bottom: 39px;
 }
 
-.team .team-title {
+.team-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -503,7 +508,7 @@ img {
   color: var(--title-text-color);
 }
 
-.team .team-name {
+.team-name {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
@@ -515,7 +520,7 @@ img {
   color: var(--title-text-color);
 }
 
-.team .team-job {
+.team-job {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -533,7 +538,7 @@ img {
   justify-content: center;
 }
 
-.list-icon .link {
+.link-icon {
   display: flex;
 
   cursor: pointer;
@@ -548,8 +553,8 @@ img {
   align-items: center;
 }
 
-.list-icon .link:hover,
-.list-icon .link:focus {
+.link-icon:hover,
+.link-icon:focus {
   background-color: var(--link-color);
   color: var(--secondary-text-color);
 }
@@ -609,36 +614,8 @@ img {
 
 .icon-client {
   fill: currentColor;
-}
-
-.company1 {
-  width: 41px;
-  height: 67px;
-}
-
-.company2 {
-  width: 40px;
-  height: 52px;
-}
-
-.company3 {
-  width: 43px;
-  height: 41px;
-}
-
-.company4 {
-  width: 84px;
-  height: 40px;
-}
-
-.company5 {
-  width: 62px;
-  height: 45px;
-}
-
-.company6 {
-  width: 93px;
-  height: 44px;
+  width: 106px;
+  height: 60px;
 }
 
 /* footer */
@@ -738,8 +715,8 @@ img {
   background-color: var(--main-bg-icon-color);
 }
 
-.blank-social > .link:hover,
-.blank-social > .link:focus {
+.item-social > .link:hover,
+.item-social > .link:focus {
   background-color: var(--link-color);
 }
 
